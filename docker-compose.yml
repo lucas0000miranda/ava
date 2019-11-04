@@ -1,0 +1,31 @@
+###############################################################################
+#                          Lucas Miranda - Software Tree                      #
+###############################################################################
+version: "3.1"
+services:
+
+    mysql:
+      image: mysql:5.7
+      ports:
+        - "33086:3306"
+      environment:
+        MYSQL_DATABASE: cte-db
+        MYSQL_ROOT_PASSWORD: ntf2XDxdLm4qUMBW
+
+    webserver:
+      image: nginx:alpine
+      container_name: cte-webserver
+      working_dir: /application
+      volumes:
+          - ./src:/application
+          - ./phpdocker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      ports:
+       - "8888:80"
+
+    php-fpm:
+      build: phpdocker/php-fpm
+      container_name: cte-php-fpm
+      working_dir: /application
+      volumes:
+        - ./src:/application
+        - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.3/fpm/conf.d/99-overrides.ini
