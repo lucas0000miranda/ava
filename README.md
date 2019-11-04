@@ -55,3 +55,6 @@ Tables:
     `contact_phone` VARCHAR(255) NOT NULL,
     `cell_phone` VARCHAR(255) NOT NULL
     ) COLLATE='utf8_general_ci' ENGINE=InnoDB;
+
+![alt text](![alt text](https://github.com/lucas0000miranda/ava/blob/master/prints/Captura%20de%20Tela%202019-11-04%20%C3%A0s%2012.33.03.png)
+)
