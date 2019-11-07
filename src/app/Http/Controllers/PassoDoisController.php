@@ -14,7 +14,7 @@ class PassoDoisController extends Controller
      */
     public function index()
     {
-        //
+        return view('welcome');
     }
 
     /**
@@ -24,8 +24,7 @@ class PassoDoisController extends Controller
      */
     public function create()
     {
-        return view('welcome');
-
+        //
     }
 
     /**

@@ -18,7 +18,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::resource('/', 'PassoUmController');
+Route::resource('passo1', 'PassoUmController');
 Route::resource('/passo2', 'PassoDoisController');
 Route::resource('/passo3', 'PassoTresController');
 

@@ -40,6 +40,6 @@ class PassoUmController extends Controller
             'birthDate'=> $request->get('birth_date')
         ]);
         $passoUm->save();
-        return redirect('/')->with('success', 'First Step Done');
+        return redirect()->route('passoUm.index')->with('success', 'First Step Done');
     }
 }

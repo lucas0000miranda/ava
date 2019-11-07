@@ -43,11 +43,12 @@
 
     <div class="container">
         <h2>Inscreva-se</h2>
-        <form method="POST" action="/" id="signup-form" class="signup-form" enctype="multipart/form-data">
+        <form method="POST" action="{{route('passo1.store')}}"  id="signup-form" class="signup-form" enctype="multipart/form-data">
             <h3>
                 Passo 1
             </h3>
             <fieldset>
+                {{ csrf_field() }}
                 <div class="form-row">
                     <div class="form-group-flex">
                         <div class="form-group">
@@ -60,6 +61,7 @@
                     </div>
                 </div>
             </fieldset>
+            <button type="submit">Click Me!</button>
 
             <h3>
                 Passo 2
