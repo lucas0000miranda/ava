@@ -1,6 +1,6 @@
 # AVA WIZARD AUTH
 
-This is Form app is to make faster the validation of a authentication. It has
+This Form app is to make faster the validation of an authentication wizard. It has
 been made by Laravel framework struct.
 
 ## Pre-requirements
